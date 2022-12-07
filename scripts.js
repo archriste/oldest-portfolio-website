@@ -1,9 +1,6 @@
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
-
-//const swiper = new Swiper(...);
+document.ondblclick = function(e) {
+    e.preventDefault();
+}
 
 let activeIndex = 0;
 
