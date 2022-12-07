@@ -1,14 +1,14 @@
 # archriste.github.io
 
-##ABOUT
+## ABOUT
 
 This website is a personal project that is currently under construction.
 The slides are currently placeholders but I will be adding content to them soon.
 
-##UPDATES
+## UPDATES
 
 =========
 
-###2022/12/06
+### 2022/12/06
 
 Added source files.
