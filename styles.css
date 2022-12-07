@@ -61,6 +61,7 @@ body {
     height: 100vh;
     margin: 0px;
     overflow: hidden;
+    touch-action: manipulation;
 }
 
 h1 {
