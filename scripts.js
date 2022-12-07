@@ -86,10 +86,12 @@ const handleClickMenu = (index) => {
 const handleHamburger = () => {
     const hamburger = document.querySelector('.hamburger');
     const menuItems = document.querySelector('.menu');
+    const contacts = document.querySelector('.contacts');
     const burgerIcon = document.querySelector('#hamburger-icon');
     const lights = document.querySelectorAll('.light');
     hamburger.classList.toggle('unhamburger');
     menuItems.classList.toggle('active');
+    contacts.classList.toggle('active');
     burgerIcon.classList.toggle('fa-bars');
     burgerIcon.classList.toggle('fa-times');
     lights.forEach((div) => {
