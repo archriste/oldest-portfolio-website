@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "shikiru": {
+    "angular-tour-of-heroes": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/shikiru",
+            "outputPath": "dist/angular-tour-of-heroes",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "shikiru:build:production"
+              "browserTarget": "angular-tour-of-heroes:build:production"
             },
             "development": {
-              "browserTarget": "shikiru:build:development"
+              "browserTarget": "angular-tour-of-heroes:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "shikiru:build"
+            "browserTarget": "angular-tour-of-heroes:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "9f0edbdb-e6e7-4f4d-88db-2b4dcc0aebe2"
+    "analytics": false
   }
 }
