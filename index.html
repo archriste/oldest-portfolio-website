@@ -23,7 +23,7 @@
                     <h3>ABOUT</h3>
                 </button>
                 <button class="nav-button light" onClick="handleClickMenu(2)">
-                    <h3>PROJECTS</h3>
+                    <h3>RESUME</h3>
                 </button>
                 <button class="nav-button light" onClick="handleClickMenu(3)">
                     <h3>EXTRAS</h3>
@@ -44,24 +44,61 @@
             <article id="home" class="slide" data-index="0" data-status="active">
                     <div class="article-section">
                         <h1>Hi, I'm Alain.</h1>
-                        <hr />
-                        <h2>This website is still under construction, but you can still contact me using the links above.</h2>
-                        <h2><br />build 316</h2>
+                        <img 
+                            src="78616197.jpg" 
+                            id="alain" 
+                            alt="A picture of Alain" 
+                            title="alain" 
+                            width="200px" 
+                            height="auto"
+                            />
+                        <h2>I'm 24 years old and a fast learner eager to develop software and work with a team.</h2>
+                        <h2>Feel free to contact me using the links above and check out my resume!</h2>
                     </div>
                 </article>
                 <article id="about" class="slide" data-index="1" data-status="inactive">
                     <div class="article-section">
-                        <p>I am a Swiss-American dual citizen and undergraduate CS major at the University of Iowa.</p>
-                        <p>As a programmer, I take a people-first approach to writing code. 
-                            I believe it's our duty as developers to make sure our work is easy to read and simple to maintain.</p>
+                        <h1>About Me</h1>
+                        <p>My name is Alain Christe and I was born on May 11, 1998 in Woodstock, Illinois. I am a Swiss-American dual citizen and undergraduate CS major at the University of Iowa.
+                            Like many others, I've spent the majority of my life messing with technology, from dial-up internet to overclocking to building the next generation of software.</p>
+                        <p>I like to spend my free time traveling the most, a gift given to me by my parents along with the most love and support anyone could ask for. It is thanks to the family, friends,
+                            and colleagues in my life that I feel so driven to help others and make life easier.
+                        </p>
+                        <p>From the moment I learned to code, I was amazed by the power to create something out of nothing and the ability to change the world. In a time when we still reckon with war
+                            and inequality, I believe that machine intelligence and human compassion together hold the key to a better future.
                         </p>
                     </div>
                 </article>
                 <article id="projects" class="slide" data-index="2" data-status="inactive">
-                    <div class="article-section"><img src="https://i.kym-cdn.com/entries/icons/original/000/016/289/Screen_Shot_2019-04-16_at_3.42.28_PM.png" id="brash" /></div>
+                    <div class="article-section">
+                        <h1>Resume</h1>
+    <object data="resume.pdf" type="application/pdf" width="100%" height="500px">
+      <p><a href="resume.pdf">Oops - looks like it didn't load. Download the resume here!</a></p>
+    </object>
+                    </div>
                 </article>
                 <article id="extras" class="slide" data-index="3" data-status="inactive">
-                    <div class="article-section">sample text</div>
+                    <div class="article-section">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h1>Extras</h1>
+                                </div>
+                                <div class="swiper-slide">
+                                    <iframe src="https://codepen.io/archriste/pen/poZQMLN" width="100%" height="400"></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <iframe src="https://www.freecodecamp.org/arct" width="100%" height="400"></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="boots.JPG" class="d-block w-100" alt="Boots the cat!">
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
                 </article>
             </div>
         </main>
@@ -78,5 +115,27 @@
                 </button>
             </div>
         </nav>
+        	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		// Initialize Swiper
+		var swiper = new Swiper('.swiper-container', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
     </body>
 </html>
