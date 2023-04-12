@@ -257,6 +257,11 @@ article p {
     top: 50%;
 }
 
+.swiper-slide a {
+    color: #000;
+    font-size: 2rem;
+}
+
 .swiper-button-next, .swiper-button-prev {
     --swiper-theme-color: #000;
 }
@@ -278,7 +283,6 @@ img {
 
 #alain {
     border-radius: 50%;
-    
 }
 
 .slide[data-index="0"] {
