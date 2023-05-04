@@ -11,33 +11,37 @@
     @apply text-lg font-inter mb-2;
   }
   section {
-    @apply block pt-50 min-h-screen;
-  }
-  body {
-    @apply bg-blue-900 text-white;
+    @apply relative block min-h-screen bg-gray-800;
   }
 }
 
 @layer components {
-  .sticky-nav {
-    @apply flex justify-evenly items-center absolute bottom-0 w-full h-50 bg-indigo-900;
+  .anchor {
+    @apply block relative bottom-16;
   }
-  .sticky-nav.stuck {
+  .sticky-nav {
+    @apply flex justify-evenly items-center absolute bottom-0 w-full h-16 bg-zinc-950;
+  }
+
+  .sticky-nav a {
+    @apply h-full text-white font-inter;
+  }
+  .stuck {
     @apply fixed top-0 left-0;
   }
   .active {
-    @apply text-white;
+    @apply bg-orange-800;
   }
   .project-grid {
     @apply grid grid-cols-3 gap-4;
   }
   .project-grid .project {
-    @apply bg-gray-500 p-4 rounded shadow text-white text-center flex flex-col justify-center;
+    @apply bg-zinc-500 p-4 rounded shadow text-white text-center flex flex-col justify-center;
   }
   .contact-grid {
     @apply grid grid-cols-2 gap-4;
   }
   .contact {
-    @apply bg-red-800 p-4 rounded shadow text-white text-center flex flex-col justify-center;
+    @apply bg-zinc-300 p-4 rounded shadow text-white text-center flex flex-col justify-center;
   }
 }
