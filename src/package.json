@@ -1,0 +1,13 @@
+{
+  "name": "arc-portfolio",
+  "version": "1.0.0",
+  "description": "Alain Christe's personal website",
+  "main": "main.js",
+  "scripts": {
+    "build:css": "npx tailwind build -i ./css/input.css -o ./css/output.css"
+  },
+  "author": "Alain Christe",
+  "license": "MIT",
+  "dependencies": {"tailwindcss": "^2.0.3"}
+
+}

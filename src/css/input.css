@@ -1,0 +1,43 @@
+/* hero font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+/* src/css/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-lg font-inter mb-2;
+  }
+  section {
+    @apply block pt-50 min-h-screen;
+  }
+  body {
+    @apply bg-blue-900 text-white;
+  }
+}
+
+@layer components {
+  .sticky-nav {
+    @apply flex justify-evenly items-center absolute bottom-0 w-full h-50 bg-indigo-900;
+  }
+  .sticky-nav.stuck {
+    @apply fixed top-0 left-0;
+  }
+  .active {
+    @apply text-white;
+  }
+  .project-grid {
+    @apply grid grid-cols-3 gap-4;
+  }
+  .project-grid .project {
+    @apply bg-gray-500 p-4 rounded shadow text-white text-center flex flex-col justify-center;
+  }
+  .contact-grid {
+    @apply grid grid-cols-2 gap-4;
+  }
+  .contact {
+    @apply bg-red-800 p-4 rounded shadow text-white text-center flex flex-col justify-center;
+  }
+}
