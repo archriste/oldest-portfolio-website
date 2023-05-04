@@ -8,6 +8,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(100%)' }
+        }
+      },
+      animation: {
+        slide: 'slide 2s linear',
+      },
       height: {
         '50': "50px",
       },

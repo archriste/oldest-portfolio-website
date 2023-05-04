@@ -11,11 +11,14 @@
     @apply text-lg font-inter mb-2;
   }
   section {
-    @apply relative block min-h-screen bg-gray-800;
+    @apply relative block min-h-screen bg-gray-800 z-20 pb-10;
   }
 }
 
 @layer components {
+  .cover {
+    @apply fixed block z-0 w-screen h-screen bg-zinc-800 top-0 left-0 transition duration-1000 animate-slide;
+  }
   .anchor {
     @apply block relative bottom-16;
   }
@@ -24,10 +27,10 @@
   }
 
   .sticky-nav a {
-    @apply h-full text-white font-inter;
+    @apply h-full text-white font-inter z-50;
   }
   .stuck {
-    @apply fixed top-0 left-0;
+    @apply fixed top-0 left-0 z-50;
   }
   .active {
     @apply bg-orange-800;
