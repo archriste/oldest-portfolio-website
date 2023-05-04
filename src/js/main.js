@@ -42,7 +42,7 @@ $(document).ready(function () {
         // If the current scroll position is within the section, add the active class to the corresponding navlink
         if (
           scrollPos >= navbarTop &&
-          scrollPos <= Math.floor(bottom) &&
+          scrollPos < Math.floor(bottom) &&
           scrollPos >= Math.floor(top) &&
           scrollPos >= content.offsetTop - navbar.offsetHeight
         ) {
