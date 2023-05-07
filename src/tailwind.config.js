@@ -15,7 +15,7 @@ module.exports = {
         }
       },
       animation: {
-        slide: 'slide 2s linear',
+        slide: 'slide 1s linear',
       },
       height: {
         '50': "50px",

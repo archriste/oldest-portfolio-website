@@ -11,7 +11,7 @@
     @apply text-lg font-inter mb-2;
   }
   section {
-    @apply relative block min-h-screen bg-gray-800 z-20 pb-10;
+    @apply relative block min-h-screen bg-gray-800 z-20 pb-10 px-10;
   }
 }
 
@@ -23,11 +23,11 @@
     @apply block relative bottom-16;
   }
   .sticky-nav {
-    @apply flex justify-evenly items-center absolute bottom-0 w-full h-16 bg-zinc-950;
+    @apply flex justify-center items-stretch absolute bottom-0 w-full h-16 bg-zinc-950;
   }
 
   .sticky-nav a {
-    @apply h-full text-white font-inter z-50;
+    @apply flex items-center text-white font-inter px-8 z-50;
   }
   .stuck {
     @apply fixed top-0 left-0 z-50;
