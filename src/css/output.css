@@ -429,8 +429,21 @@ video {
 h1{
   margin-bottom: 0.5rem;
   font-family: Inter, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h2{
+  margin-bottom: 0.5rem;
+  font-family: Inter, sans-serif;
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+p{
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 section{
@@ -657,35 +670,55 @@ section{
   gap: 1rem;
 }
 
-.project-grid .project{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
+.project{
+  position: relative;
+  height: 100%;
   padding: 1rem;
-  text-align: center;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.project-image{
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.project-title{
+  box-sizing: border-box;
+  width: 100%;
+  --tw-translate-y: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-color: rgb(9 9 11 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  opacity: 0;
+}
+
+.project:hover .project-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
 }
 
 .contact-grid{
   display: grid;
+  height: 24rem;
+  width: 24rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  justify-items: center;
 }
 
 .contact{
   display: flex;
+  height: 100%;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
-  border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 0;
   padding: 1rem;
   text-align: center;
   --tw-text-opacity: 1;

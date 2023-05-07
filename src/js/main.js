@@ -9,6 +9,7 @@ $(document).ready(function () {
   const sections = document.querySelectorAll("section");
   const hero = document.querySelector("#hero");
   const content = document.querySelector("#content");
+  const body = document.querySelector("body");
 
   // Scroll event listener to update the active section in the navbar
   $(window).scroll(function () {
