@@ -16,144 +16,154 @@
     <script src="js/main.js"></script>
   </head>
 
-  <body class="bg-zinc-800 text-white h-full w-full">
+  <body class="bg-gradient-to-t from-stone-200 to-stone-300 text-white h-full w-full">
     <div id="hero">
       <div class="flex flex-col justify-center items-center">
         <span
           id="hero-title"
-          class="fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-8xl font-inter w-full text-center"
+          class="fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 text-8xl font-inter w-full text-center drop-shadow-xl"
         >
           Alain Christe
         </span>
       </div>
     </div>
-    <div id="cover" class="cover translate-y-full"></div>
+    <div id="cover" class="cover animate-fade"></div>
     <div id="navbar" class="z-100 sticky-nav">
       <a href="#goto-about">About</a>
       <a href="#goto-projects">Projects</a>
       <a href="#goto-contact">Contact</a>
     </div>
 
-    <div id="content" class="mt-[100vh] bg-gray-800">
-      <section id="about">
+    <div id="content" class="mt-[100vh]">
+      <section id="about" class="bg-gradient-to-r from-emerald-500 to-emerald-600">
         <a class="anchor" id="goto-about"></a>
         <div class="filler">
           <h1>About me</h1>
-          <p>
+          <h2 class="w-1/2">
             I'm a Swiss-American dual national who loves making friends around
             the globe, learning new languages, and practicing jiu-jitsu! I've
             been working with software all my life.
-          </p>
+          </h2>
 
-          <p>
+          <h2 class="w-1/2">
             In 2003, I was an introverted 5 year old with unrestricted access to
             an internet where people connected through forums and exchanged
             media through Myspace and Limewire. My world expanded in an instant
             and it hasn't stopped growing since.
-          </p>
+          </h2>
           <h1>Skills</h1>
         </div>
       </section>
-      <section id="projects">
+      <section
+        id="projects"
+        class="bg-gradient-to-r from-sky-500 to-indigo-500"
+      >
         <a class="anchor" id="goto-projects"></a>
         <div class="filler">
           <h1>Projects</h1>
-          <h2>Here's a selection of projects:</h2>
+          <h2>Here's a selection of projects I've completed.</h2>
+          <h2>I'm working on new ones all the time.</h2>
           <div class="project-grid">
             <div class="project">
-              <a
-                href="https://codepen.io/archriste/pen/yLReGNN"
-                target="_blank"
-              >
-                <div class="project-image">
-                  <img
-                    src="images/project-calculator.png"
-                    alt="React Calculator"
-                  />
-                </div>
-                <div class="project-title">
-                  <h3>React Calculator</h3>
-                </div>
-              </a>
+              <div class="project-image">
+                <img
+                  src="images/project-calculator.png"
+                  alt="React Calculator"
+                />
+              </div>
+              <div class="project-title">
+                <h2>React Calculator</h2>
+                <a
+                  href="https://codepen.io/archriste/pen/yLReGNN"
+                  target="_blank"
+                  >Codepen</a
+                >
+              </div>
             </div>
+
             <div class="project">
-              <a
-                href="https://codepen.io/archriste/pen/abRdGBy"
-                target="_blank"
-              >
-                <div class="project-image">
-                  <img
-                    src="images/project-markdown.png"
-                    alt="Markdown Previewer"
-                  />
-                </div>
-                <div class="project-title">
-                  <h3>Markdown Previewer</h3>
-                </div>
-              </a>
+              <div class="project-image">
+                <img
+                  src="images/project-markdown.png"
+                  alt="Markdown Previewer"
+                />
+              </div>
+              <div class="project-title">
+                <h2>Markdown Previewer</h2>
+                <a
+                  href="https://codepen.io/archriste/pen/abRdGBy"
+                  target="_blank"
+                  >Codepen</a
+                >
+              </div>
             </div>
+
             <div class="project">
-              <a
-                href="https://codepen.io/archriste/pen/poZQMLN"
-                target="_blank"
-              >
-                <div class="project-image">
-                  <img src="images/project-quote.png" alt="Quote Machine" />
-                </div>
-                <div class="project-title">
-                  <h3>Quote Machine</h3>
-                </div>
-              </a>
+              <div class="project-image">
+                <img src="images/project-quote.png" alt="Quote Machine" />
+              </div>
+              <div class="project-title">
+                <h2>Quote Machine</h2>
+                <a
+                  href="https://codepen.io/archriste/pen/poZQMLN"
+                  target="_blank"
+                  >Codepen</a
+                >
+              </div>
             </div>
+
             <div class="project">
-              <a
-                href="https://codepen.io/archriste/details/NWOrWLB"
-                target="_blank"
-              >
-                <div class="project-image">
-                  <img
-                    src="images/project-timer.png"
-                    alt="Productivity Clock"
-                  />
-                </div>
-                <div class="project-title">
-                  <h3>Productivity Clock</h3>
-                </div>
-              </a>
+              <div class="project-image">
+                <img src="images/project-timer.png" alt="Productivity Clock" />
+              </div>
+              <div class="project-title">
+                <h2>Productivity Clock</h2>
+                <a
+                  href="https://codepen.io/archriste/details/NWOrWLB"
+                  target="_blank"
+                  >Codepen</a
+                >
+              </div>
             </div>
+
             <div class="project">
-              <a
-                href="https://codepen.io/archriste/pen/eYPJLrR"
-                target="_blank"
-              >
-                <div class="project-image">
-                  <img src="images/project-drums.png" alt="Keyboard Drumpad" />
-                </div>
-                <div class="project-title">
-                  <h3>Keyboard Drumpad</h3>
-                </div>
-              </a>
+              <div class="project-image">
+                <img src="images/project-drums.png" alt="Keyboard Drumpad" />
+              </div>
+              <div class="project-title">
+                <h2>Keyboard Drumpad</h2>
+                <a
+                  href="https://codepen.io/archriste/pen/eYPJLrR"
+                  target="_blank"
+                  >Codepen</a
+                >
+              </div>
             </div>
+
             <div class="project">
-              <a
-                href="https://codepen.io/archriste/pen/yLqjBZb"
-                target="_blank"
-              >
-                <div class="project-image">
-                  <img
-                    src="images/project-cursor.png"
-                    alt="Cursor Seeking Spot"
-                  />
-                </div>
-                <div class="project-title">
-                  <h3>Cursor Seeking Spot</h3>
-                </div>
-              </a>
+              <div class="project-image">
+                <img
+                  src="images/project-cursor.png"
+                  alt="Cursor Seeking Spot"
+                />
+              </div>
+              <div class="project-title">
+                <h2>Cursor Seeking Spot</h2>
+                <h4>
+                  Named after the cursor-controlled color-inverting spot with a
+                  couple of scenes to play with.
+                </h4>
+                <a
+                  href="https://codepen.io/archriste/pen/yLqjBZb"
+                  target="_blank"
+                  >Codepen</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" class="bg-gradient-to-t from-amber-300 to-amber-400">
         <a class="anchor" id="goto-contact"></a>
         <h1>Contact me!</h1>
         <div class="contact-grid">
