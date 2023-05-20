@@ -6,74 +6,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h1 {
-    @apply text-6xl font-inter py-8 drop-shadow-xl;
-  }
-  h2 {
-    @apply text-2xl py-4 font-inter drop-shadow-xl;
-  }
-  h3 {
-    @apply text-xl font-inter drop-shadow-xl;
-  }
-  h4 {
-    @apply text-sm mb-2 w-9/12 drop-shadow-xl;
-  }
-  p {
-    @apply text-base font-medium w-1/2 py-4 drop-shadow-xl;
-  }
-  section {
-    @apply relative block min-h-screen bg-gray-800 z-20 pb-10 px-10 md:px-20 lg:px-40;
-  }
-}
-
 @layer components {
-  .funky {
-    @apply bg-[url('images/funky.jpg')] bg-cover bg-center bg-no-repeat;
-  }
-  .cover {
-    @apply fixed block z-0 w-screen h-screen bg-stone-300 top-0 left-0 transition duration-1000 opacity-0;
-  }
-  .anchor {
-    @apply block relative bottom-16;
-  }
   .sticky-nav {
-    @apply flex justify-center items-stretch absolute bottom-0 w-full h-16 bg-zinc-950;
+    @apply absolute top-full z-50 flex h-20 w-full items-stretch justify-center border-t shadow shadow-transparent backdrop-blur backdrop-grayscale backdrop-brightness-50;
   }
   .sticky-nav a {
-    @apply flex items-center text-white font-inter px-8 z-50;
+    @apply flex w-36 items-center justify-center px-8 font-inter text-white transition-all duration-200;
   }
   .stuck {
-    @apply fixed top-0 left-0 z-50;
+    @apply fixed left-0 top-0 border-b border-t-0;
   }
   .active {
-    @apply bg-orange-800;
-  }
-  .project-grid {
-    @apply grid md:grid-cols-3 grid-cols-1 gap-1 px-20 py-16;
-  }
-  .project {
-    @apply relative h-full border-white border-2;
-  }
-  .project-title {
-    @apply absolute flex flex-col opacity-0 w-full h-full transform -translate-y-full bg-zinc-950 bg-opacity-80 box-border;
-  }
-  .project-title h3 {
-    @apply w-9/12;
-  }
-  .project-title a {
-    @apply bg-cyan-600 rounded-2xl text-white text-center font-inter text-xl py-6 px-10 mt-6;
-  }
-  .project:hover {
-    @apply z-50 transform scale-125 m-auto transition duration-75 ease-out;
-  }
-  .project:hover .project-title {
-    @apply opacity-100 flex justify-center items-center transition duration-75 ease-out;
-  }
-  .contact-grid {
-    @apply grid grid-cols-2 justify-items-center w-96 h-96;
-  }
-  .contact {
-    @apply w-full h-full bg-opacity-0 p-4 rounded-lg shadow text-white text-center flex flex-col justify-center;
+    @apply text-2xl;
   }
 }

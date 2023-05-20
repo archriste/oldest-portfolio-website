@@ -3,8 +3,8 @@ $(document).ready(function () {
   console.log("main.js loaded");
 
   // Selectors for all the elements we'll need
-  const navbar = document.querySelector(".sticky-nav");
-  const links = document.querySelectorAll(".sticky-nav a");
+  const navbar = document.querySelector("#navbar");
+  const links = document.querySelectorAll("#navbar a");
   const navbarTop = navbar.offsetTop;
   const sections = document.querySelectorAll("section");
   const hero = document.querySelector("#hero");
